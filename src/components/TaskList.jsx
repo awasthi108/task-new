@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./TaskList.css";
+import "./taskList.css";
 import PropTypes from "prop-types";
 import {
   Pencil,
