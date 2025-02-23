@@ -1,0 +1,148 @@
+.filters-section {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.filters-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.filters-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filters-title h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.filters-title svg {
+  color: #6b7280;
+}
+
+.filters-content {
+  padding: 1.25rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.filter-label svg {
+  color: #9ca3af;
+}
+
+.priority-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.priority-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  color: #4b5563;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.priority-option:hover {
+  background: #f9fafb;
+}
+
+.priority-option svg {
+  width: 16px;
+  height: 16px;
+}
+
+.priority-option.all {
+  color: #6b7280;
+}
+
+.priority-option.all:hover {
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+.priority-option.urgent {
+  color: #ef4444;
+  border-color: #fecaca;
+}
+
+.priority-option.urgent:hover {
+  background: #fef2f2;
+}
+
+.priority-option.high {
+  color: #f59e0b;
+  border-color: #fde68a;
+}
+
+.priority-option.high:hover {
+  background: #fffbeb;
+}
+
+.priority-option.normal {
+  color: #3b82f6;
+  border-color: #bfdbfe;
+}
+
+.priority-option.normal:hover {
+  background: #eff6ff;
+}
+
+.priority-option.low {
+  color: #10b981;
+  border-color: #a7f3d0;
+}
+
+.priority-option.low:hover {
+  background: #ecfdf5;
+}
+
+/* Active states */
+.priority-option.active {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+  .filters-section {
+    border-radius: 12px;
+  }
+
+  .priority-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .priority-option {
+    width: 100%;
+    justify-content: center;
+  }
+}
